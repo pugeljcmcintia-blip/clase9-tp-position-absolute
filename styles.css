@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+:root{
+    --color-text:#483F6B;
+}
+*gitgi{ padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+      font-family: "DM Sans", sans-serif;
+      text-align: center;
+      padding-top: 50px;
+
+      min-height: 100vh;
+      margin: 0;
+      background:linear-gradient(160deg,#B3BDFF 0%, #FFFFFF 48%, #C7CEFF 100%);
+}
+.logo-flotante{
+    display: block; /*permite centrarlo con margenes*/
+    margin: 0 auto 20px auto; /*centra horizontalmente y deja 2opx de espacio abajo*/
+} 
+
+.titulo span{
+    font-weight: 400;
+    font-size: 48px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.linea-arriba{ 
+    color: rgb(24,24,26);
+}
+
+.linea-abajo{
+     background: linear-gradient(90deg, #6653e2, #ee43a7);
+     -webkit-background-clip: text; /*recorta el fondo para que solo pinte las letras*/
+     -webkit-text-fill-color: transparent;/*hace transparente el color base para que se vea el fondo*/
+    
+     margin-top: 5px;/*empuja el elemento 5 pixeles hacia abajo*/
+}
+.abajo{
+    display: block;
+}
+
+.bloque{
+   max-width: 700px; /*controla el largo horzontal*/
+   margin: 30px auto; /* lo separa del titulo y lo centra en la pantalla automaticamnete*/
+   padding: 12px 20px; /*espaciado interno*/
+   background-color: #FFFFFF;
+   border-radius: 15px;
+   border: 1px solid #796da8;
+   display: flex;
+   align-items: center; /* centra el texto verticalmente*/
+   position: relative;
+   text-shadow: #878ec9;
+}
+.bloque span{
+    color: #6C757D;
+    font-size: 16px;
+    border-color: #322c4b;
+    text-shadow: none;
+}
+
+.btn-flecha{
+    position: absolute;
+    right: 3px; /*lo pega al borde derecho de la barra blanca*/
+    
+    top: 0;
+    bottom: 0;
+    margin: auto 0;/* el navegador calcula todo el espacio que sobra arriba y abajo y lo reparte en partes exactamentes iguales*/
+
+    /*formas y tamaños*/
+    width: 40px; /*ancho del boton*/
+    height: 40px; /*alto del boton*/
+    border-radius: 30%;
+
+    /*colores y bordes*/
+    background-color: #6C5DD3;
+    color: #FFFFFF;
+    border: none;
+
+    /*detalles finales*/ 
+    display: flex;
+    justify-content: center; /*centra el simbolo horizontalmente dentro del circulo*/
+    align-items: center; /*centra el simbolo verticalmente dentro del circulo*/
+    font-size: 18px; /*tamaño de la flecha*/
+    cursor: pointer; /*hace que aparezca la manito al pasar el mouse*/
+}
+    
+    
+
+p{ color: #6C757D;
+
+}
